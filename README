@@ -1,0 +1,12 @@
+La aplicacion fue escrita en javascript usando NodeJs 12
+
+Para ejecutar la aplicacion se debera crear una carpeta 'data' (ya existe) dentro de la carpeta 'src' y poner todos los .json,
+luego se le da 'npm install' seguido por'npm start' y la salida se puede ver por consola o por dos archivos que se crean en la carpeta dist: 'parte1.txt' y 'parte2.txt'
+
+Para la segunda parte, se interpreto el problema como el 'Hitting set' problem, el cual no tiene una solucion polinomial (es al menos NP Complete)
+por lo tanto la implementacion de la solucion se realizo utilizando un algoritmo greedy para lograr una solucion optima 
+(lo cual implica que tal vez no sea LA solucion). Este algoritmo consiste en encontrar el 'nodo' que mas le pegue a los distintos sets, primero se ponen
+los difrentes grupos en un set y luego se busca el nodo, una vez encontrado este los grupos a los que pertenece se borran del set de grupos y 
+se itera hasta que no hay mas grupos en el set.
+
+Reconozco que pueden haber otras soluciones pero tal vez son mas complejas en tiempo de ejecucion (fuerza bruta, utilizar dijkstra para el camino mas corto, etc)
